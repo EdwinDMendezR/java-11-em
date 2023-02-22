@@ -3,6 +3,8 @@ package news.string.methods;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.stream.Stream;
+
 public class NewStringMethodsTest {
 
     @Test
@@ -18,5 +20,11 @@ public class NewStringMethodsTest {
         Assert.assertFalse(string.isEmpty());
     }
 
+    @Test
+    public void linesTest() {
+        String string = "abcdef";
+        Stream<String> resultado = string.lines();
+        resultado.forEach(System.out::println);
+    }
 
 }
