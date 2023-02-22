@@ -12,7 +12,7 @@ public class NewStringMethodsTest {
     }
 
     @Test
-    public void methodTest() {
+    public void isBlankTest() {
         String string = "   ";
         Assert.assertTrue(string.isBlank());
         Assert.assertFalse(string.isEmpty());
